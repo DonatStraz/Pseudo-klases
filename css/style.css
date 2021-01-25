@@ -1,0 +1,122 @@
+@charset "UTF-8";
+.list-one li {
+  display: inline-block;
+}
+
+.list-one li a {
+  text-decoration: none;
+  color: #F24A72;
+  margin: 0 20px;
+  font-size: 20px;
+}
+
+.list-one li a:hover {
+  border-bottom: 2px solid #F24A72;
+}
+
+.list-one li a:active {
+  background-color: #cea5c0;
+}
+
+.div-one .paragraphs p:nth-child(1):before {
+  content: "Tekstas prieš ";
+  color: #e96e1b;
+}
+
+.div-one .paragraphs p:nth-child(2):after {
+  content: "Tekstas po ";
+  color: #e96e1b;
+}
+
+.div-two .paragraphs .img-container:nth-child(1):before {
+  content: "Tekstas prieš ";
+  color: #e96e1b;
+}
+
+.div-two .paragraphs .img-container:nth-child(2):after {
+  content: "Tekstas po ";
+  color: #e96e1b;
+}
+
+.div-three .paragraphs p:nth-child(1):before {
+  content: "";
+  width: 200px;
+  height: 20px;
+  display: inline-block;
+  background-color: black;
+}
+
+.div-three .paragraphs p:nth-child(2):after {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  background-color: black;
+}
+
+.paragraph-one::-moz-selection {
+  background-color: yellow;
+}
+
+.paragraph-one::selection {
+  background-color: yellow;
+}
+
+.paragraph-two::first-letter {
+  font-size: 50px;
+}
+
+.paragraph-three::first-line {
+  background-color: yellow;
+}
+
+.lists .list-two li:nth-child(odd) {
+  background-color: #e96e1b;
+}
+
+.lists .list-three li:nth-child(even) {
+  background-color: #e96e1b;
+}
+
+.lists .list-four li:nth-child(3) {
+  text-decoration: underline;
+}
+
+.lists .list-four li:nth-child(4) {
+  color: #e96e1b;
+}
+
+.lists .list-four li:nth-child(5) {
+  background-color: #e96e1b;
+}
+
+.lists .list-five li:first-child {
+  color: #e96e1b;
+}
+
+.lists .list-six li:last-child {
+  color: #e96e1b;
+}
+
+.blokai .block {
+  width: 300px;
+  height: 300px;
+  background-color: #e96e1b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+
+.blokai .block:nth-child(1):hover {
+  background-color: Red;
+}
+
+.blokai .block:nth-child(3):hover {
+  width: 1000px;
+}
+
+.blokai .block:nth-child(5):hover {
+  margin-left: 200px;
+  background-color: Red;
+}
+/*# sourceMappingURL=style.css.map */

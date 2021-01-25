@@ -1,0 +1,141 @@
+.list-one li{
+    display:inline-block;
+    a{
+        text-decoration:none;
+        color:#F24A72;
+        margin:0 20px;
+        font-size:20px;
+    }
+    a:hover{
+        border-bottom:2px solid #F24A72;
+    }
+    a:active {
+        background-color: #cea5c0;
+    }
+}
+
+.div-one{
+    .paragraphs{
+        p:nth-child(1):before{
+            content: "Tekstas prieš ";
+            color:rgb(233, 110, 27);
+        }
+        p:nth-child(2):after{
+            content: "Tekstas po ";
+            color:rgb(233, 110, 27);
+        }
+    }
+}
+
+
+.div-two{
+    .paragraphs{
+        .img-container:nth-child(1):before{
+            content: "Tekstas prieš ";
+            color:rgb(233, 110, 27);
+        }
+        .img-container:nth-child(2):after{
+            content: "Tekstas po ";
+            color:rgb(233, 110, 27);
+        }
+    }
+}
+
+
+
+.div-three{
+    .paragraphs{
+        p:nth-child(1):before{
+            content: "";
+            width:200px;
+            height:20px;
+            display:inline-block;
+            background-color:black;
+        }
+        p:nth-child(2):after{
+            content: "";
+            display:inline-block;
+            width:200px;
+            height:20px;
+            background-color:black;
+        }
+    }
+}
+
+.paragraph-one::selection{
+    background-color:yellow;
+}
+
+.paragraph-two::first-letter{
+    font-size:50px;
+}
+
+.paragraph-three::first-line{
+    background-color:yellow;
+
+}
+
+.lists{
+
+    .list-two{
+        li:nth-child(odd){
+            background-color:rgb(233, 110, 27);
+        }
+    }
+
+    .list-three{
+        li:nth-child(even){
+            background-color:rgb(233, 110, 27);
+        }
+    }
+
+    .list-four{
+        li:nth-child(3){
+            text-decoration: underline;
+        }
+        li:nth-child(4){
+            color:rgb(233, 110, 27);
+        }
+        li:nth-child(5){
+            background-color:rgb(233, 110, 27);
+        }
+    }
+
+    .list-five{
+        li:first-child{
+            color:rgb(233, 110, 27);
+        }
+    }
+
+    .list-six{
+        li:last-child{
+            color:rgb(233, 110, 27);
+        }
+    }
+
+}
+
+
+.blokai{
+
+.block{
+    width:300px;
+    height:300px;
+    background-color:rgb(233, 110, 27);
+    transition:0.5s;
+    position:relative;
+}
+.block:nth-child(1):hover{
+    background-color:Red;
+}
+
+.block:nth-child(3):hover{
+    width: 1000px;
+   
+}
+.block:nth-child(5):hover{
+  margin-left:200px;
+  background-color:Red;
+}
+}
+
